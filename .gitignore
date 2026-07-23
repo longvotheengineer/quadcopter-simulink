@@ -1,0 +1,85 @@
+# ==========================================================================
+# MATLAB and Simulink .gitignore
+# ==========================================================================
+
+# --- MATLAB Autosave, Backup, and Cache ---
+*.asv
+*.m~
+*.bak
+*.log
+.matlab/
+java.log.temp
+javaclasspath.txt
+
+# --- Simulink Cache and Build Directories ---
+# These are the biggest culprits for repository bloat.
+slprj/
+*.slxc
+*.scc
+*.ssc~
+
+# --- Simulink Auto-Generated Backup & Trash ---
+# Prevents GUI artifacts and conflict resolution backups from being tracked
+*.slx.original
+*.slx.autosave
+*.mdl.original
+*.mdl.autosave
+*.sreq
+*.sxc
+
+# --- Code Generation (Simulink Coder / Embedded Coder) ---
+# Ignore generated code directories and reports
+*_ert_rtw/
+*_grt_rtw/
+*_target_rtw/
+sl_core/
+rtwgen_ext/
+*.c
+*.h
+*.cpp
+*.hpp
+*.obj
+*.o
+# Note: If your project specifically requires tracking generated C/C++ 
+# code for a handoff, comment out the extensions above.
+
+# --- Compiled Executables and MEX Files ---
+# Ignore compiled binaries as they are OS-dependent
+*.mex*
+*.exe
+*.dll
+*.so
+*.dylib
+
+# --- Published Reports and Documentation ---
+# Output folders from MATLAB's "Publish" feature
+html/
+
+# --- Packaging, Releases, and Apps ---
+*.mlappinstall
+*.mltbx
+*.zip
+*.tar.gz
+
+# --- Data Files ---
+# By default, large data files shouldn't be in Git. If you use small .mat 
+# files for unit testing, keep this commented out. Otherwise, uncomment it.
+# *.mat
+# *.dat
+# *.csv
+
+# --- Project Configuration (Optional) ---
+# Unsaved changes to MATLAB project states
+*.SimulinkProject/*
+!*.SimulinkProject/project.xml
+resources/project/Root.type.Files/*
+!resources/project/Root.type.Files/project.xml
+
+# --- OS-Specific System Files ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
