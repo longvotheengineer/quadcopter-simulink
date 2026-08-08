@@ -37,10 +37,6 @@ slprj/
 *_target_rtw/
 sl_core/
 rtwgen_ext/
-*.c
-*.h
-*.cpp
-*.hpp
 *.obj
 *.o
 # Note: If your project specifically requires tracking generated C/C++ 
