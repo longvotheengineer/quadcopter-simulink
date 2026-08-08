@@ -1,0 +1,51 @@
+# ==========================================================================
+# STM32, CMake, and VS Code .gitignore
+# ==========================================================================
+
+# --- STM32CubeMX Artifacts ---
+mx.scratch
+.mxproject
+*.ioc.bak
+!.settings 
+
+# --- CMake & Build Directories ---
+# Ignores all out-of-source build files and caches
+build/
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+compile_commands.json
+
+# --- Compiled Binaries & Build Outputs ---
+# Prevents bloat from intermediate and final object files
+*.o
+*.d
+*.su
+*.elf
+*.bin
+*.hex
+*.map
+*.list
+*.a
+
+# --- VS Code Workspace ---
+# Ignores local editor states but optionally tracks shared debugger configs
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+*.code-workspace
+
+# --- RTOS & Debugger Artifacts ---
+# Useful if you ever generate Keil/IAR projects alongside
+*.uvoptx
+*.uvprojx
+*.jlink
+JLinkLog.txt
+*.dbgconf
+
+# --- Windows System Artifacts ---
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
