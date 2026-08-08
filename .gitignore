@@ -11,6 +11,9 @@
 java.log.temp
 javaclasspath.txt
 
+# --- Data Files ---
+*.mat
+
 # --- Simulink Cache and Build Directories ---
 # These are the biggest culprits for repository bloat.
 slprj/

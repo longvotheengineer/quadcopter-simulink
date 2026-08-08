@@ -29,13 +29,17 @@ compile_commands.json
 *.list
 *.a
 
-# --- VS Code Workspace ---
+# --- VS Code Workspace & Language Servers ---
 # Ignores local editor states but optionally tracks shared debugger configs
 .vscode/*
 !.vscode/settings.json
 !.vscode/launch.json
 !.vscode/tasks.json
 *.code-workspace
+
+# Ignores local IntelliSense cache
+.clangd/
+.cache/
 
 # --- RTOS & Debugger Artifacts ---
 # Useful if you ever generate Keil/IAR projects alongside
@@ -49,3 +53,7 @@ JLinkLog.txt
 Thumbs.db
 Desktop.ini
 $RECYCLE.BIN/
+
+# --- STM32 VS Code Extension ---
+# Ignores local toolchain path configurations
+.settings/*.json
